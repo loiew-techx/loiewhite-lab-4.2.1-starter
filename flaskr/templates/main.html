@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -9,27 +10,48 @@
 </head>
 
 <body>
-    <!-- The below tag is using Bulma CSS. Try replacing line 14 with line 13. -->
-    <!-- <div class="has-text-success-dark is-size-4  has-text-weight-medium"> -->
-    <div>
-        <a href="{{ url_for('home') }}">
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation"">
+    <h1>Cats on Skis!</h1>
+    &nbsp;&nbsp;
+    <div class="has-text-success-dark is-size-4  has-text-weight-medium field is-grouped">
+        <a class="navbar-item is-hoverable" href="{{ url_for('home') }}">
             Home
         </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('all_pages') }}">
+        <a class="navbar-item is-hoverable" href="{{ url_for('all_pages') }}">
             Pages
         </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('about') }}">
+        <a class="navbar-item is-hoverable" href="{{ url_for('about') }}">
             About
         </a>
     </div>
+</nav>
 
-    <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
-    <!-- <div class="content"> -->
-    <div>
-        {% block content %}{{ page_content }}{% endblock %}
+<hr class="solid">
+<div>
+    {% block content %}{{ page_content }}{% endblock %}
+</div>
+
+&nbsp;&nbsp;
+<h4 class="has-text-dark">Leave a message!</h4>
+
+<textarea 
+    class="textarea"
+    placeholder="your messsage here"
+    rows="2"
+></textarea>
+<div class="buttons has-addons is-right">
+    <button class="button is-normal is-responsive is-info is-warning">Send your message</button>
+</div>
+
+
+<footer class="has-background-dark is-fixed-bottom">
+    <div class="has-text-centered">
+        <p class="has-background-dark has-text-white">
+            <strong class="has-text-white">Cats on Skis</strong> is my very beautiful blog. Feel free to take a look around. Stay a while!</p>
+        </p>
     </div>
+</footer>
 
 </body>
 

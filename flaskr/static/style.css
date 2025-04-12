@@ -2,20 +2,57 @@
 
 html {
     margin: 25px;
-    background-color: lightblue;
+    background-color: rgb(224, 216, 231);
     font-family: verdana;
     font-size: 20px;
 }
 
 h3 {
     margin-top: 20px;
-    background-color: lightblue;
+    background-color: rgb(224, 216, 231); 
     font-size: 30px;
+    font-weight: bolder;   
+}
+
+h4 {
+    font-size: 26px;
     font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 p {
     margin-top: 10px;
     margin-left: 15px;
-    background-color: lightblue;
+    background-color: rgb(224, 216, 231);
+    color: black;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(76, 12, 82);
+    padding: 5px;
+}
+
+nav.navbar.is-transparent {
+    background-color: transparent !important;
+}
+
+div.has-text-white{
+    background-color: rgb(76, 12, 82);
+}
+
+html, body { height: 90vh; }
+
+.is-fixed-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above other elements if needed */
+  }
+
+.card-content{
+    margin: 5px;
 }
